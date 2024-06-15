@@ -16,4 +16,4 @@
 			ü It will not support legacy browsers 
 			ü like IE11
 			ü It is not possible to test real devices mobile apps. We can only test on simulated devices
-![image](https://github.com/samudsan/Playwright-Framework/assets/49445155/9c9e71fe-cd48-406d-8289-cf76ac7e40fc)
+

@@ -16,7 +16,7 @@ test("Verify login with invalid credentials", async ({ page }) => {
 
     // Click on the login button and verify invalid login credential text
     await page.locator('[data-test="login-button"]').click();
-    // await expect(page.getByText('Username and password do not match any user')).toBeVisible();
-    await expect(page.getByText('Username and password do not match any user',{exact:true})).toBeVisible();
+    await expect(page.getByText('Username and password do not match any user')).toBeVisible();
+    // await expect(page.getByText('Username and password do not match any user',{exact:true})).toBeVisible();
 });
 

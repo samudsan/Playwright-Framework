@@ -4,7 +4,8 @@ test("Verify login with invalid credentials", async ({ page }) => {
     await page.goto("https://www.saucedemo.com/");
 
     // Locate the username input and fill it
-    await page.locator('[data-test="username"]').click();
+    // below mentioned data-test is an attribute of an html element
+    await page.locator('[data-test="username"]').click(); 
     await page.locator('[data-test="username"]').fill("TestUser1");
 
     // Locate the password input and fill it
@@ -19,4 +20,3 @@ test("Verify login with invalid credentials", async ({ page }) => {
     await expect(page.getByText('Username and password do not match any user')).toBeVisible();
     // await expect(page.getByText('Username and password do not match any user',{exact:true})).toBeVisible();
 });
-
